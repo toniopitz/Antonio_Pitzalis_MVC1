@@ -1,0 +1,37 @@
+﻿@model PiattoViewModel
+
+<div class="form-group">
+    <label asp-for="Nome"></label>
+    <input asp-for="Nome" class="form-control" />
+    <span asp-validation-for ="Nome" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="Descrizione"></label>
+    <input asp-for="Descrizione" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label asp-for="Prezzo"></label>
+    <input asp-for="Prezzo" class="form-control" />
+    <span asp-validation-for ="Prezzo" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="Tipo"></label>
+    <select asp-for="Tipo" asp-items="@ViewBag.Portata" class="form-control">
+        <option value="">Seleziona il tipo di portata</option>
+        <option value="1">Primo</option>
+        <option value="2">Secondo</option>
+        <option value="3">Contorno</option>
+        <option value="4">Dolce</option>
+
+    </select>
+    <span asp-validation-for ="Tipo" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="Menu.Nome"></label>
+    <input asp-for="Menu.Nome" class="form-control" />
+    <span asp-validation-for ="Menu.Nome" class="text-danger"></span>
+</div>

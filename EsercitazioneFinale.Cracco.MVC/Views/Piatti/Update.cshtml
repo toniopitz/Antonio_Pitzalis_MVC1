@@ -1,0 +1,9 @@
+﻿@model PiattoViewModel
+
+<form method ="post">
+    <partial name="_InsertPiatti" model="Model" />
+
+    <input type="submit" value="Aggiorna" class="btn btn-primary" />
+    <input type="reset" value="Pulisci" class="=btn btn-primary" />
+    <a class="btn btn-primary" asp-controller="Piatti" asp-action="Index">Indietro</a>
+</form>

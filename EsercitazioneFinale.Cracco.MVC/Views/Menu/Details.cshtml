@@ -1,0 +1,32 @@
+﻿@model List<PiattoViewModel>
+<h3>Lista dei piatti del Menu @ViewBag.NomeMenu</h3>
+<table class="table table-hover table-dark table-bordered opacity-75" style="color:whitesmoke  ">
+    <partial name="_TablePiatti" model="Model"/>
+    @*<thead>
+        <tr style="color:black">
+            <th>Nome</th>
+            <th>Descrizione</th>
+            <th>Prezzo</th>
+            <th>Portata</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.Nome</td>
+                <td>@item.Descrizione</td>
+                <td>@item.Prezzo</td>
+                <td>@item.Tipo</td>
+            </tr>
+        }*@
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Totale</th>
+            <th>@ViewBag.PrezzoTotale - Euro</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </tfoot>
+</table>

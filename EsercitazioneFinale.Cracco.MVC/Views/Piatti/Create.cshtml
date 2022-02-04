@@ -1,0 +1,10 @@
+﻿@model PiattoViewModel
+
+<h2>Inserisci i dati del piatto che vuoi inserire</h2>
+<form method="post">
+    <partial name="_InsertPiatti" model="Model" />
+
+    <input type="submit" value="Inserisci" class="btn btn-primary" />
+    <input type="reset" value="Clean" class="=btn btn-primary" />
+    <a class="btn btn-primary" asp-controller="Piatti" asp-action="Index">Indietro</a>
+</form>

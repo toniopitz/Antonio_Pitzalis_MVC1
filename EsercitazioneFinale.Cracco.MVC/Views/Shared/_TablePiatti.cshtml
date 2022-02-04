@@ -1,0 +1,20 @@
+﻿@model List<PiattoViewModel>
+<thead>
+        <tr style="color:black">
+            <th>Nome</th>
+            <th>Descrizione</th>
+            <th>Prezzo</th>
+            <th>Portata</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.Nome</td>
+                <td>@item.Descrizione</td>
+                <td>@item.Prezzo</td>
+                <td>@item.Tipo</td>
+            </tr>
+        }
+    </tbody>
